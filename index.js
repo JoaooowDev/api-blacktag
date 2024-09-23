@@ -202,7 +202,7 @@ app.post('/transferir', ensureLoggedIn, async (req, res) => {
     }
 });
 
-// Rota para transferencia de ingresso através do e-mail
+// Rota para transferencia de ingresso através do e-mail teste
 app.post('/transferticket', ensureLoggedIn, async (req, res) => {
     const { ticketId, userEmail } = req.body;
 
