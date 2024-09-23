@@ -1,0 +1,1765 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Language" content="pt-br">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Meus Ingressos | Blacktag</title>
+
+        <!-- Metas -->
+        <meta property="fb:app_id" content="209771772513879">
+        <meta property="og:locale" content="pt_BR">
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.blacktag.com.br/usuarios/meus-ingressos">
+        <meta property="og:title" content="Meus Ingressos | Blacktag">
+        <meta property="og:site_name" content="Blacktag">
+        <meta property="og:image" content="https://www.blacktag.com.br/img/brands/blacktag/facebook_share_image.jpg">
+        <meta property="og:image:width" content="875">
+        <meta property="og:image:height" content="450">
+        <meta property="og:description" content="">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="apple-itunes-app" content="app-id=1005276343" />
+        <meta name="google-play-app" content="app-id=com.pixelsolutions.blacktag">
+
+        <link href="/img/brands/blacktag/favicon/favicon.ico?1724852960" type="image/x-icon" rel="icon" />
+        <link href="/img/brands/blacktag/favicon/favicon.ico?1724852960" type="image/x-icon" rel="shortcut icon" />
+        <link href="/img/brands/blacktag/favicon/apple-touch-icon.png?1724852960" rel="apple-touch-icon"
+                sizes="180x180" />
+        <link href="/img/brands/blacktag/favicon/favicon-32x32.png?1724852960" rel="icon" type="image/png"
+                sizes="32x32" />
+        <link href="/img/brands/blacktag/favicon/favicon-32x32.png?1724852960" rel="shortcut icon" type="image/png"
+                sizes="32x32" />
+        <link href="/img/brands/blacktag/favicon/favicon-16x16.png?1724852960" rel="icon" type="image/png"
+                sizes="16x16" />
+        <link href="/img/brands/blacktag/favicon/favicon-16x16.png?1724852960" rel="shortcut icon" type="image/png"
+                sizes="16x16" />
+        <meta name="manifest" content="/img/brands/blacktag/favicon/site.webmanifest" />
+
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,500;1,600;1,700&display=swap"
+                rel="stylesheet">
+
+        <link rel="stylesheet" href="/vendor/sweetalert2/dist/sweetalert2.min.css?1724852961" />
+        <link rel="stylesheet" href="/css/blacktag.css?1724852960" />
+</head>
+
+<body>
+        <div id="page-wrapper">
+                <navbar class="navbar pb-0 navbar-light bg-white navbar-expand-lg">
+                        <div class="container flex-wrap">
+                                <a href="/" class="navbar-brand"><img src="/img/brands/blacktag/logo.png?1724852960"
+                                                alt="Blacktag" title="Blacktag" class="img-fluid"
+                                                srcset="/img/brands/blacktag/logo@2x.png 2x,/img/brands/blacktag/logo.png 1x" /></a>
+                                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                        data-target="#nav-collapse" aria-controls="nav-collapse" aria-expanded="false"
+                                        aria-label="Toggle navigation">
+                                        <i class="fas fa-bars"></i>
+                                </button>
+
+
+                                <div id="nav-collapse" class="navbar-collapse collapse">
+                                        <ul class="navbar-nav">
+                                                <li class="nav-item px-lg-4">
+                                                        <a href="/eventos" class="nav-link">Eventos</a>
+                                                </li>
+                                                <li class="nav-item px-lg-4">
+                                                        <a href="/usuarios/opencart?ref=https://store.blacktag.com.br/"
+                                                                class="nav-link">Lojas</a>
+                                                </li>
+                                                <li class="nav-item b-nav-dropdown dropdown px-lg-4">
+                                                        <a href="#" role="button" aria-haspopup="true"
+                                                                aria-expanded="false" class="nav-link dropdown-toggle"
+                                                                id="menu_organize" data-toggle="dropdown">Organize</a>
+                                                        <ul tabindex="-1" class="dropdown-menu"
+                                                                aria-labelledby="menu_organize">
+                                                                <li role="presentation">
+                                                                        <a href="/sobre" class="dropdown-item"
+                                                                                role="menuitem">Sobre nós</a>
+                                                                </li>
+                                                                <li role="presentation">
+                                                                        <a href="/sobre#gestao-simplificada"
+                                                                                class="dropdown-item"
+                                                                                role="menuitem">Gestão Simplificada</a>
+                                                                </li>
+                                                                <li role="presentation">
+                                                                        <a href="/sobre#seats-page"
+                                                                                class="dropdown-item"
+                                                                                role="menuitem">Marcação de assento</a>
+                                                                </li>
+                                                        </ul>
+                                                </li>
+
+                                                <li class="nav-item px-lg-4">
+                                                        <a href="//blacktagformaturas.com.br" class="nav-link"
+                                                                target="_blank" rel="noopener">Formaturas</a>
+                                                </li>
+                                        </ul>
+
+                                        <ul class="navbar-nav navbar-user ml-auto">
+
+                                                <li class="navbar-icon nav-item b-nav-dropdown dropdown">
+                                                        <a href="#" target="_self" data-toggle="dropdown" role="button"
+                                                                class="nav-link">
+                                                                <img src="/img/user_default.png?1724852960"
+                                                                        class="rounded-circle" alt="" />
+                                                        </a>
+
+                                                        <div class="dropdown-menu dropdown-menu-right mr--2 mt-2"
+                                                                aria-labelledby="navbarDropdown">
+                                                                <h6 class="mx-4 mt-2 d-none d-lg-block">Minha Conta</h6>
+
+
+                                                                <a href="/usuarios/meus-ingressos"
+                                                                        class="dropdown-item"><span
+                                                                                class="fas fa-ticket-alt text-muted mr-2"></span>
+                                                                        Meus Ingressos</a>
+                                                                <a href="/usuarios/opencart?ref=https://store.blacktag.com.br/index.php?route=account/order"
+                                                                        class="dropdown-item"><span
+                                                                                class="fas fa-shopping-bag text-muted mr-2"></span>
+                                                                        Meus Produtos</a>
+
+                                                                <a href="/usuarios/meus-dados"
+                                                                        class="dropdown-item"><span
+                                                                                class="fas fa-user text-muted mr-2"></span>
+                                                                        Meus Dados</a>
+                                                                <a href="/usuarios/minha-carteira"
+                                                                        class="dropdown-item"><span
+                                                                                class="fas fa-wallet text-muted mr-2"></span>
+                                                                        Minha Carteira</a>
+                                                                <a href="/usuarios/meus-cartoes"
+                                                                        class="dropdown-item"><span
+                                                                                class="fas fa-credit-card text-muted mr-2"></span>
+                                                                        Meus Cartões</a>
+                                                                <div class="dropdown-divider d-none d-lg-block"></div>
+
+                                                                <a href="/usuarios/sair"
+                                                                        class="dropdown-item text-center">Sair</a>
+                                                        </div>
+                                                </li>
+                                        </ul>
+                                </div>
+
+                                <div class="border-bottom w-100 mt-2"></div>
+
+                        </div>
+                </navbar>
+                <section class="container py-4 p-relative mb-4 my-tickets-page">
+
+                        <h4 class="mb-3">Meus Ingressos</h4>
+
+
+
+                        <p class="mb-4 text-muted">Clique no número de ingresso(s) para visualizar os qrcodes.</p>
+
+                        <!-- Ingressos -->
+
+
+                        <div class="row mb-4 mx-auto">
+
+                                <div class="modal ticket-modal" tabindex="-1" role="dialog" id="event-ticket-21267">
+                                        <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                        <div class="modal-header border-0">
+                                                                <h5 class="modal-title">
+                                                                        BAILE DO ROOF ❗️ Los Angeles </h5>
+                                                                <button type="button" class="close" data-dismiss="modal"
+                                                                        aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                </button>
+                                                        </div>
+
+                                                        <div class="modal-body">
+
+                                                                <div id="event-carousel-21267" class="carousel slide"
+                                                                        data-ride="carousel" data-interval="false">
+
+                                                                        <div class="carousel-inner" role="listbox">
+                                                                                <div class="row">
+                                                                                        <div
+                                                                                                class="col-auto d-flex align-items-center">
+                                                                                                <a class="left carousel-control"
+                                                                                                        href="#event-carousel-21267"
+                                                                                                        role="button"
+                                                                                                        data-slide="prev">
+                                                                                                        <span class="fa fa-chevron-left"
+                                                                                                                aria-hidden="true"></span>
+                                                                                                        <span
+                                                                                                                class="sr-only">Previous</span>
+                                                                                                </a>
+                                                                                        </div>
+
+                                                                                        <div class="col">
+//JoaooowDev
+                                                                                                <div
+                                                                                                        class="carousel-item text-center active">
+
+                                                                                                        <!-- Ticket Aprovado -->
+
+
+                                                                                                        <!-- Ticket Sem Transferencia -->
+
+                                                                                                        <div
+                                                                                                                class="mb-3">
+                                                                                                                <img src="/home/generate-qr-code?qr=a79f26250d4abd98c92ac498059c92c8"
+                                                                                                                        class="qrcode-image"
+                                                                                                                        alt="" />
+                                                                                                        </div>
+
+                                                                                                        <h5
+                                                                                                                class="mb-1 text-info font-weight-light">
+                                                                                                                Backstage
+                                                                                                                Convidados
+                                                                                                                ROOF!
+                                                                                                        </h5>
+
+                                                                                                        <p
+                                                                                                                class="mb-1 text-info">
+                                                                                                                <small>
+                                                                                                                        Promocional
+                                                                                                                        -
+                                                                                                                        R$
+                                                                                                                        0,00
+                                                                                                                </small>
+                                                                                                        </p>
+
+                                                                                                        <p
+                                                                                                                class="mb-3 text-secondary">
+                                                                                                        </p>
+
+                                                                                                        <div
+                                                                                                                class="row">
+                                                                                                                <div
+                                                                                                                        class="col">
+                                                                                                                        <button class="btn btn-primary btn-transfer rounded-pill px-4 btn-sm mb-2"
+                                                                                                                                data-ticket-id="12764211">
+                                                                                                                                <i
+                                                                                                                                        class="fas fa-random"></i>
+                                                                                                                                Transferir
+                                                                                                                        </button>
+                                                                                                                </div>
+
+
+                                                                                                                <div
+                                                                                                                        class="col">
+                                                                                                                        <a class="btn btn-primary rounded-pill px-4 btn-sm mb-2"
+                                                                                                                                href="/pedido/ingresso/12764211/imprimir.pdf"
+                                                                                                                                target="_blank">
+                                                                                                                                <i
+                                                                                                                                        class="fas fa-print"></i>
+                                                                                                                                Imprimir
+                                                                                                                        </a>
+                                                                                                                </div>
+                                                                                                        </div>
+
+
+
+
+                                                                                                        <hr />
+
+                                                                                                        <div
+                                                                                                                class="row mt-3">
+                                                                                                                <div
+                                                                                                                        class="col">
+                                                                                                                        <p><small>Ingresso:
+                                                                                                                                        <span
+                                                                                                                                                class="clearfix">#12764211
+                                                                                                                                                <span
+                                                                                                                                                        class="mx-3">-</span>
+                                                                                                                                                Pedido:
+                                                                                                                                                #6714376</small>
+                                                                                                                        </p>
+                                                                                                                </div>
+                                                                                                        </div>
+                                                                                                </div>
+
+
+                                                                                                <div
+                                                                                                        class="carousel-item text-center ">
+
+                                                                                                        <!-- Ticket Aprovado -->
+
+
+                                                                                                        <!-- Ticket Sem Transferencia -->
+
+                                                                                                        <div
+                                                                                                                class="mb-3">
+                                                                                                                <img src="/home/generate-qr-code?qr=1a6d4e4656bb39b27652c140595793bd"
+                                                                                                                        class="qrcode-image"
+                                                                                                                        alt="" />
+                                                                                                        </div>
+
+                                                                                                        <h5
+                                                                                                                class="mb-1 text-info font-weight-light">
+                                                                                                                Pista
+                                                                                                                Representante
+                                                                                                                ROOF!
+                                                                                                        </h5>
+
+                                                                                                        <p
+                                                                                                                class="mb-1 text-info">
+                                                                                                                <small>
+                                                                                                                        Promocional
+                                                                                                                        -
+                                                                                                                        R$
+                                                                                                                        0,00
+                                                                                                                </small>
+                                                                                                        </p>
+
+                                                                                                        <p
+                                                                                                                class="mb-3 text-secondary">
+                                                                                                        </p>
+
+                                                                                                        <div
+                                                                                                                class="row">
+                                                                                                                <div
+                                                                                                                        class="col">
+                                                                                                                        <button class="btn btn-primary btn-transfer rounded-pill px-4 btn-sm mb-2"
+                                                                                                                                data-ticket-id="12923058">
+                                                                                                                                <i
+                                                                                                                                        class="fas fa-random"></i>
+                                                                                                                                Transferir
+                                                                                                                        </button>
+                                                                                                                </div>
+
+
+                                                                                                                <div
+                                                                                                                        class="col">
+                                                                                                                        <a class="btn btn-primary rounded-pill px-4 btn-sm mb-2"
+                                                                                                                                href="/pedido/ingresso/12923058/imprimir.pdf"
+                                                                                                                                target="_blank">
+                                                                                                                                <i
+                                                                                                                                        class="fas fa-print"></i>
+                                                                                                                                Imprimir
+                                                                                                                        </a>
+                                                                                                                </div>
+                                                                                                        </div>
+
+
+
+
+                                                                                                        <hr />
+
+                                                                                                        <div
+                                                                                                                class="row mt-3">
+                                                                                                                <div
+                                                                                                                        class="col">
+                                                                                                                        <p><small>Ingresso:
+                                                                                                                                        <span
+                                                                                                                                                class="clearfix">#12923058
+                                                                                                                                                <span
+                                                                                                                                                        class="mx-3">-</span>
+                                                                                                                                                Pedido:
+                                                                                                                                                #6806437</small>
+                                                                                                                        </p>
+                                                                                                                </div>
+                                                                                                        </div>
+                                                                                                </div>
+
+
+                                                                                                <div
+                                                                                                        class="carousel-item text-center ">
+
+                                                                                                        <!-- Ticket Aprovado -->
+
+
+                                                                                                        <!-- Ticket Sem Transferencia -->
+
+                                                                                                        <div
+                                                                                                                class="mb-3">
+                                                                                                                <img src="/home/generate-qr-code?qr=59326ae8f811defb65d6d954154977c0"
+                                                                                                                        class="qrcode-image"
+                                                                                                                        alt="" />
+                                                                                                        </div>
+
+                                                                                                        <h5
+                                                                                                                class="mb-1 text-info font-weight-light">
+                                                                                                                Eco Copo
+                                                                                                                ROOF!
+                                                                                                                Cortesia
+                                                                                                        </h5>
+
+                                                                                                        <p
+                                                                                                                class="mb-1 text-info">
+                                                                                                                <small>
+                                                                                                                        Promocional
+                                                                                                                        -
+                                                                                                                        R$
+                                                                                                                        0,00
+                                                                                                                </small>
+                                                                                                        </p>
+
+                                                                                                        <p
+                                                                                                                class="mb-3 text-secondary">
+                                                                                                        </p>
+
+                                                                                                        <div
+                                                                                                                class="row">
+                                                                                                                <div
+                                                                                                                        class="col">
+                                                                                                                        <button class="btn btn-primary btn-transfer rounded-pill px-4 btn-sm mb-2"
+                                                                                                                                data-ticket-id="12931250">
+                                                                                                                                <i
+                                                                                                                                        class="fas fa-random"></i>
+                                                                                                                                Transferir
+                                                                                                                        </button>
+                                                                                                                </div>
+
+
+                                                                                                                <div
+                                                                                                                        class="col">
+                                                                                                                        <a class="btn btn-primary rounded-pill px-4 btn-sm mb-2"
+                                                                                                                                href="/pedido/ingresso/12931250/imprimir.pdf"
+                                                                                                                                target="_blank">
+                                                                                                                                <i
+                                                                                                                                        class="fas fa-print"></i>
+                                                                                                                                Imprimir
+                                                                                                                        </a>
+                                                                                                                </div>
+                                                                                                        </div>
+
+
+
+
+                                                                                                        <hr />
+
+                                                                                                        <div
+                                                                                                                class="row mt-3">
+                                                                                                                <div
+                                                                                                                        class="col">
+                                                                                                                        <p><small>Ingresso:
+                                                                                                                                        <span
+                                                                                                                                                class="clearfix">#12931250
+                                                                                                                                                <span
+                                                                                                                                                        class="mx-3">-</span>
+                                                                                                                                                Pedido:
+                                                                                                                                                #6811370</small>
+                                                                                                                        </p>
+                                                                                                                </div>
+                                                                                                        </div>
+                                                                                                </div>
+
+
+                                                                                                <div
+                                                                                                        class="carousel-item text-center ">
+
+                                                                                                        <!-- Ticket Aprovado -->
+
+
+                                                                                                        <!-- Ticket Sem Transferencia -->
+
+                                                                                                        <div
+                                                                                                                class="mb-3">
+                                                                                                                <img src="/home/generate-qr-code?qr=91f70392a2e161aa5855b342e8e83d88"
+                                                                                                                        class="qrcode-image"
+                                                                                                                        alt="" />
+                                                                                                        </div>
+
+                                                                                                        <h5
+                                                                                                                class="mb-1 text-info font-weight-light">
+                                                                                                                Tirante
+                                                                                                                ROOF!
+                                                                                                                Cortesia
+                                                                                                        </h5>
+
+                                                                                                        <p
+                                                                                                                class="mb-1 text-info">
+                                                                                                                <small>
+                                                                                                                        Promocional
+                                                                                                                        -
+                                                                                                                        R$
+                                                                                                                        0,00
+                                                                                                                </small>
+                                                                                                        </p>
+
+                                                                                                        <p
+                                                                                                                class="mb-3 text-secondary">
+                                                                                                        </p>
+
+                                                                                                        <div
+                                                                                                                class="row">
+                                                                                                                <div
+                                                                                                                        class="col">
+                                                                                                                        <button class="btn btn-primary btn-transfer rounded-pill px-4 btn-sm mb-2"
+                                                                                                                                data-ticket-id="12931251">
+                                                                                                                                <i
+                                                                                                                                        class="fas fa-random"></i>
+                                                                                                                                Transferir
+                                                                                                                        </button>
+                                                                                                                </div>
+
+
+                                                                                                                <div
+                                                                                                                        class="col">
+                                                                                                                        <a class="btn btn-primary rounded-pill px-4 btn-sm mb-2"
+                                                                                                                                href="/pedido/ingresso/12931251/imprimir.pdf"
+                                                                                                                                target="_blank">
+                                                                                                                                <i
+                                                                                                                                        class="fas fa-print"></i>
+                                                                                                                                Imprimir
+                                                                                                                        </a>
+                                                                                                                </div>
+                                                                                                        </div>
+
+
+
+
+                                                                                                        <hr />
+
+                                                                                                        <div
+                                                                                                                class="row mt-3">
+                                                                                                                <div
+                                                                                                                        class="col">
+                                                                                                                        <p><small>Ingresso:
+                                                                                                                                        <span
+                                                                                                                                                class="clearfix">#12931251
+                                                                                                                                                <span
+                                                                                                                                                        class="mx-3">-</span>
+                                                                                                                                                Pedido:
+                                                                                                                                                #6811370</small>
+                                                                                                                        </p>
+                                                                                                                </div>
+                                                                                                        </div>
+                                                                                                </div>
+
+                                                                                        </div>
+
+                                                                                        <div
+                                                                                                class="col-auto d-flex align-items-center">
+                                                                                                <a class="right carousel-control"
+                                                                                                        href="#event-carousel-21267"
+                                                                                                        role="button"
+                                                                                                        data-slide="next">
+                                                                                                        <span class="fa fa-chevron-right"
+                                                                                                                aria-hidden="true"></span>
+                                                                                                        <span
+                                                                                                                class="sr-only">Next</span>
+                                                                                                </a>
+                                                                                        </div>
+                                                                                </div>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+
+                                                </div>
+                                        </div>
+                                </div>
+
+                                <div class="card bg-light w-100 card-payment">
+                                        <div class="card-body">
+                                                <div class="row">
+                                                        <div
+                                                                class="col-12 col-md-3 mb-2 mb-md-0 d-flex align-items-center">
+                                                                <img src="https://d106p58duwuiz5.cloudfront.net/event/cover/48c4dfd15ef76b0cb0b737399073287b.jpg"
+                                                                        class="img-fluid rounded event-cover" alt="" />
+                                                        </div>
+                                                        <div class="col mb-2 mb-md-0">
+                                                                <h5 class="mt-2">BAILE DO ROOF ❗️ Los Angeles</h5>
+                                                                <p class="mb-1 text-primary">
+                                                                        <small><span
+                                                                                        class="far fa-calendar mr-1 icon"></span>
+                                                                                Sex 06 de Set</small>
+                                                                </p>
+                                                                <p class="mb-1 text-primary">
+                                                                        <small><span
+                                                                                        class="far fa-clock mr-1 icon"></span>
+                                                                                22:00</small>
+                                                                </p>
+
+                                                                <p class="mb-1 text-secondary">
+                                                                        <small><span
+                                                                                        class="fas fa-map-marker-alt mr-1 icon"></span>
+                                                                                Sonora Garden</small>
+                                                                </p>
+                                                                <p class="mb-1 text-secondary">
+                                                                        <small>Rua Comendador Nestor Pereira, 33,
+                                                                                03034-070, Canindé, São Paulo,
+                                                                                SP</small>
+                                                                </p>
+                                                        </div>
+                                                        <div class="col-md-auto col-12 d-flex align-items-center">
+                                                                <button type="button"
+                                                                        class="btn-info btn rounded-pill px-4 w-100"
+                                                                        data-target="#event-ticket-21267"
+                                                                        data-toggle="modal">
+                                                                        4 ingresso(s)
+                                                                </button>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+
+
+                        <div class="row mb-4 mx-auto">
+
+                                <div class="modal ticket-modal" tabindex="-1" role="dialog" id="event-ticket-19005">
+                                        <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                        <div class="modal-header border-0">
+                                                                <h5 class="modal-title">
+                                                                        ANIVERSÁRIO DO BLAKES❗️ROOF Produtora </h5>
+                                                                <button type="button" class="close" data-dismiss="modal"
+                                                                        aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                </button>
+                                                        </div>
+
+                                                        <div class="modal-body">
+
+                                                                <div id="event-carousel-19005" class="carousel slide"
+                                                                        data-ride="carousel" data-interval="false">
+
+                                                                        <div class="carousel-inner" role="listbox">
+                                                                                <div class="row">
+                                                                                        <div
+                                                                                                class="col-auto d-flex align-items-center">
+                                                                                                <a class="left carousel-control"
+                                                                                                        href="#event-carousel-19005"
+                                                                                                        role="button"
+                                                                                                        data-slide="prev">
+                                                                                                        <span class="fa fa-chevron-left"
+                                                                                                                aria-hidden="true"></span>
+                                                                                                        <span
+                                                                                                                class="sr-only">Previous</span>
+                                                                                                </a>
+                                                                                        </div>
+
+                                                                                        <div class="col">
+
+                                                                                                <div
+                                                                                                        class="carousel-item text-center active">
+
+                                                                                                        <!-- Ticket Aprovado -->
+
+
+                                                                                                        <!-- Ticket Transferido -->
+
+
+                                                                                                        <div
+                                                                                                                class="transfered-image">
+                                                                                                                <img src="/home/generate-qr-code?qr=4fe6287b04469c690c0833951fadf43b&amp;color=lightgray&amp;size=185"
+                                                                                                                        class="qrcode-image"
+                                                                                                                        alt="" />
+                                                                                                                <img src="/img/user_default.png?1724852960"
+                                                                                                                        class="user-image rounded-circle"
+                                                                                                                        alt="" />
+                                                                                                        </div>
+
+                                                                                                        <h5
+                                                                                                                class="mt-2 mb-0">
+                                                                                                                Gustavo
+                                                                                                                Ribeiro
+                                                                                                        </h5>
+
+                                                                                                        <p
+                                                                                                                class="text-muted mb-2">
+                                                                                                                <small>gustavo.ribeiro2002@outlook.com</small>
+                                                                                                        </p>
+
+                                                                                                        <p>
+                                                                                                                <small>Transferido
+                                                                                                                        em
+                                                                                                                        17/04/2024
+                                                                                                                        às
+                                                                                                                        15:06</small>
+                                                                                                        </p>
+
+
+
+
+                                                                                                        <hr />
+
+                                                                                                        <div
+                                                                                                                class="row mt-3">
+                                                                                                                <div
+                                                                                                                        class="col">
+                                                                                                                        <p><small>Ingresso:
+                                                                                                                                        <span
+                                                                                                                                                class="clearfix">#12087752
+                                                                                                                                                <span
+                                                                                                                                                        class="mx-3">-</span>
+                                                                                                                                                Pedido:
+                                                                                                                                                #6333941</small>
+                                                                                                                        </p>
+                                                                                                                </div>
+                                                                                                        </div>
+                                                                                                </div>
+
+
+                                                                                                <div
+                                                                                                        class="carousel-item text-center ">
+
+                                                                                                        <!-- Ticket Aprovado -->
+
+
+                                                                                                        <!-- Ticket Sem Transferencia -->
+
+                                                                                                        <div
+                                                                                                                class="mb-3">
+                                                                                                                <img src="/home/generate-qr-code?qr=a87f743ae3211faacca18f245ec41a27"
+                                                                                                                        class="qrcode-image"
+                                                                                                                        alt="" />
+                                                                                                        </div>
+
+                                                                                                        <h5
+                                                                                                                class="mb-1 text-info font-weight-light">
+                                                                                                                Entrada
+                                                                                                                Front-Stage!
+                                                                                                                SEM
+                                                                                                                TAXA!
+                                                                                                        </h5>
+
+                                                                                                        <p
+                                                                                                                class="mb-1 text-info">
+                                                                                                                <small>
+                                                                                                                        1º
+                                                                                                                        Lote
+                                                                                                                        -
+                                                                                                                        R$
+                                                                                                                        145,00
+                                                                                                                </small>
+                                                                                                        </p>
+
+                                                                                                        <p
+                                                                                                                class="mb-3 text-secondary">
+                                                                                                        </p>
+
+                                                                                                        <div
+                                                                                                                class="row">
+                                                                                                                <div
+                                                                                                                        class="col">
+                                                                                                                        <button class="btn btn-primary btn-transfer rounded-pill px-4 btn-sm mb-2"
+                                                                                                                                data-ticket-id="12087753">
+                                                                                                                                <i
+                                                                                                                                        class="fas fa-random"></i>
+                                                                                                                                Transferir
+                                                                                                                        </button>
+                                                                                                                </div>
+
+
+                                                                                                                <div
+                                                                                                                        class="col">
+                                                                                                                        <a class="btn btn-primary rounded-pill px-4 btn-sm mb-2"
+                                                                                                                                href="/pedido/ingresso/12087753/imprimir.pdf"
+                                                                                                                                target="_blank">
+                                                                                                                                <i
+                                                                                                                                        class="fas fa-print"></i>
+                                                                                                                                Imprimir
+                                                                                                                        </a>
+                                                                                                                </div>
+                                                                                                        </div>
+
+
+
+
+                                                                                                        <hr />
+
+                                                                                                        <div
+                                                                                                                class="row mt-3">
+                                                                                                                <div
+                                                                                                                        class="col">
+                                                                                                                        <p><small>Ingresso:
+                                                                                                                                        <span
+                                                                                                                                                class="clearfix">#12087753
+                                                                                                                                                <span
+                                                                                                                                                        class="mx-3">-</span>
+                                                                                                                                                Pedido:
+                                                                                                                                                #6333941</small>
+                                                                                                                        </p>
+                                                                                                                </div>
+                                                                                                        </div>
+                                                                                                </div>
+
+
+                                                                                                <div
+                                                                                                        class="carousel-item text-center ">
+
+                                                                                                        <!-- Ticket Aprovado -->
+
+
+                                                                                                        <!-- Ticket Transferido -->
+
+
+                                                                                                        <div
+                                                                                                                class="transfered-image">
+                                                                                                                <img src="/home/generate-qr-code?qr=fb8f628f2ad68bfd392d15f142eaa8d0&amp;color=lightgray&amp;size=185"
+                                                                                                                        class="qrcode-image"
+                                                                                                                        alt="" />
+                                                                                                                <img src="https://graph.facebook.com/3244796595844998/picture?type=large&amp;access_token=209771772513879%7Cd0acc5c91e23260cfd0113717c0db71a"
+                                                                                                                        class="user-image rounded-circle"
+                                                                                                                        alt="" />
+                                                                                                        </div>
+
+                                                                                                        <h5
+                                                                                                                class="mt-2 mb-0">
+                                                                                                                higor
+                                                                                                                garcia
+                                                                                                        </h5>
+
+                                                                                                        <p
+                                                                                                                class="text-muted mb-2">
+                                                                                                                <small>7segundoz9@gmail.com</small>
+                                                                                                        </p>
+
+                                                                                                        <p>
+                                                                                                                <small>Transferido
+                                                                                                                        em
+                                                                                                                        25/05/2024
+                                                                                                                        às
+                                                                                                                        19:09</small>
+                                                                                                        </p>
+
+
+
+
+                                                                                                        <hr />
+
+                                                                                                        <div
+                                                                                                                class="row mt-3">
+                                                                                                                <div
+                                                                                                                        class="col">
+                                                                                                                        <p><small>Ingresso:
+                                                                                                                                        <span
+                                                                                                                                                class="clearfix">#12392703
+                                                                                                                                                <span
+                                                                                                                                                        class="mx-3">-</span>
+                                                                                                                                                Pedido:
+                                                                                                                                                #6497472</small>
+                                                                                                                        </p>
+                                                                                                                </div>
+                                                                                                        </div>
+                                                                                                </div>
+
+
+                                                                                                <div
+                                                                                                        class="carousel-item text-center ">
+
+                                                                                                        <!-- Ticket Aprovado -->
+
+
+                                                                                                        <!-- Ticket Sem Transferencia -->
+
+                                                                                                        <div
+                                                                                                                class="mb-3">
+                                                                                                                <img src="/home/generate-qr-code?qr=2b83197a306e4b9ca52260cb5ab4c383"
+                                                                                                                        class="qrcode-image"
+                                                                                                                        alt="" />
+                                                                                                        </div>
+
+                                                                                                        <h5
+                                                                                                                class="mb-1 text-info font-weight-light">
+                                                                                                                Entrada
+                                                                                                                Pista!
+                                                                                                                SEM TAXA
+                                                                                                        </h5>
+
+                                                                                                        <p
+                                                                                                                class="mb-1 text-info">
+                                                                                                                <small>
+                                                                                                                        3º
+                                                                                                                        Lote
+                                                                                                                        -
+                                                                                                                        R$
+                                                                                                                        95,00
+                                                                                                                </small>
+                                                                                                        </p>
+
+                                                                                                        <p
+                                                                                                                class="mb-3 text-secondary">
+                                                                                                        </p>
+
+                                                                                                        <div
+                                                                                                                class="row">
+                                                                                                                <div
+                                                                                                                        class="col">
+                                                                                                                        <button class="btn btn-primary btn-transfer rounded-pill px-4 btn-sm mb-2"
+                                                                                                                                data-ticket-id="12393241">
+                                                                                                                                <i
+                                                                                                                                        class="fas fa-random"></i>
+                                                                                                                                Transferir
+                                                                                                                        </button>
+                                                                                                                </div>
+
+
+                                                                                                                <div
+                                                                                                                        class="col">
+                                                                                                                        <a class="btn btn-primary rounded-pill px-4 btn-sm mb-2"
+                                                                                                                                href="/pedido/ingresso/12393241/imprimir.pdf"
+                                                                                                                                target="_blank">
+                                                                                                                                <i
+                                                                                                                                        class="fas fa-print"></i>
+                                                                                                                                Imprimir
+                                                                                                                        </a>
+                                                                                                                </div>
+                                                                                                        </div>
+
+
+
+
+                                                                                                        <hr />
+
+                                                                                                        <div
+                                                                                                                class="row mt-3">
+                                                                                                                <div
+                                                                                                                        class="col">
+                                                                                                                        <p><small>Ingresso:
+                                                                                                                                        <span
+                                                                                                                                                class="clearfix">#12393241
+                                                                                                                                                <span
+                                                                                                                                                        class="mx-3">-</span>
+                                                                                                                                                Pedido:
+                                                                                                                                                #6497754</small>
+                                                                                                                        </p>
+                                                                                                                </div>
+                                                                                                        </div>
+                                                                                                </div>
+
+                                                                                        </div>
+
+                                                                                        <div
+                                                                                                class="col-auto d-flex align-items-center">
+                                                                                                <a class="right carousel-control"
+                                                                                                        href="#event-carousel-19005"
+                                                                                                        role="button"
+                                                                                                        data-slide="next">
+                                                                                                        <span class="fa fa-chevron-right"
+                                                                                                                aria-hidden="true"></span>
+                                                                                                        <span
+                                                                                                                class="sr-only">Next</span>
+                                                                                                </a>
+                                                                                        </div>
+                                                                                </div>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+
+                                                </div>
+                                        </div>
+                                </div>
+
+                                <div class="card bg-light w-100 opacity-3">
+                                        <div class="card-body">
+                                                <div class="row">
+                                                        <div
+                                                                class="col-12 col-md-3 mb-2 mb-md-0 d-flex align-items-center">
+                                                                <img src="https://d106p58duwuiz5.cloudfront.net/event/cover/a055f7811b218db0dbfe372b1877f239.png"
+                                                                        class="img-fluid rounded event-cover" alt="" />
+                                                        </div>
+                                                        <div class="col mb-2 mb-md-0">
+                                                                <h5 class="mt-2">ANIVERSÁRIO DO BLAKES❗️ROOF Produtora
+                                                                </h5>
+                                                                <p class="mb-1 text-primary">
+                                                                        <small><span
+                                                                                        class="far fa-calendar mr-1 icon"></span>
+                                                                                Sáb 25 de Mai</small>
+                                                                </p>
+                                                                <p class="mb-1 text-primary">
+                                                                        <small><span
+                                                                                        class="far fa-clock mr-1 icon"></span>
+                                                                                22:00</small>
+                                                                </p>
+
+                                                                <p class="mb-1 text-secondary">
+                                                                        <small><span
+                                                                                        class="fas fa-map-marker-alt mr-1 icon"></span>
+                                                                                Sonora Garden</small>
+                                                                </p>
+                                                                <p class="mb-1 text-secondary">
+                                                                        <small>Rua Comendador Nestor Pereira, 33,
+                                                                                03034-070, Canindé, São Paulo,
+                                                                                SP</small>
+                                                                </p>
+                                                        </div>
+                                                        <div class="col-md-auto col-12 d-flex align-items-center">
+                                                                <button type="button"
+                                                                        class="btn-info btn rounded-pill px-4 w-100"
+                                                                        data-target="#event-ticket-19005"
+                                                                        data-toggle="modal">
+                                                                        4 ingresso(s)
+                                                                </button>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+
+
+                        <div class="row mb-4 mx-auto">
+
+                                <div class="modal ticket-modal" tabindex="-1" role="dialog" id="event-ticket-18569">
+                                        <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                        <div class="modal-header border-0">
+                                                                <h5 class="modal-title">
+                                                                        Baile do Saw </h5>
+                                                                <button type="button" class="close" data-dismiss="modal"
+                                                                        aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                </button>
+                                                        </div>
+
+                                                        <div class="modal-body">
+
+                                                                <div id="event-carousel-18569" class="carousel slide"
+                                                                        data-ride="carousel" data-interval="false">
+
+                                                                        <div class="carousel-inner" role="listbox">
+                                                                                <div class="row">
+                                                                                        <div
+                                                                                                class="col-auto d-flex align-items-center">
+                                                                                                <a class="left carousel-control"
+                                                                                                        href="#event-carousel-18569"
+                                                                                                        role="button"
+                                                                                                        data-slide="prev">
+                                                                                                        <span class="fa fa-chevron-left"
+                                                                                                                aria-hidden="true"></span>
+                                                                                                        <span
+                                                                                                                class="sr-only">Previous</span>
+                                                                                                </a>
+                                                                                        </div>
+
+                                                                                        <div class="col">
+
+                                                                                                <div
+                                                                                                        class="carousel-item text-center active">
+
+                                                                                                        <!-- Ticket Aprovado -->
+
+
+                                                                                                        <!-- Ticket Sem Transferencia -->
+
+                                                                                                        <div
+                                                                                                                class="mb-3">
+                                                                                                                <img src="/home/generate-qr-code?qr=135ea4e0c1cd2315ca20fc8edb8a39e6"
+                                                                                                                        class="qrcode-image"
+                                                                                                                        alt="" />
+                                                                                                        </div>
+
+                                                                                                        <h5
+                                                                                                                class="mb-1 text-info font-weight-light">
+                                                                                                                Área VIP
+                                                                                                                Open Bar
+                                                                                                                (LOTE
+                                                                                                                ANTERIOR)
+                                                                                                        </h5>
+
+                                                                                                        <p
+                                                                                                                class="mb-1 text-info">
+                                                                                                                <small>
+                                                                                                                        Promocional
+                                                                                                                        -
+                                                                                                                        R$
+                                                                                                                        110,00
+                                                                                                                </small>
+                                                                                                        </p>
+
+                                                                                                        <p
+                                                                                                                class="mb-3 text-secondary">
+                                                                                                        </p>
+
+                                                                                                        <div
+                                                                                                                class="row">
+                                                                                                                <div
+                                                                                                                        class="col">
+                                                                                                                        <button class="btn btn-primary btn-transfer rounded-pill px-4 btn-sm mb-2"
+                                                                                                                                data-ticket-id="11946478">
+                                                                                                                                <i
+                                                                                                                                        class="fas fa-random"></i>
+                                                                                                                                Transferir
+                                                                                                                        </button>
+                                                                                                                </div>
+
+
+                                                                                                                <div
+                                                                                                                        class="col">
+                                                                                                                        <a class="btn btn-primary rounded-pill px-4 btn-sm mb-2"
+                                                                                                                                href="/pedido/ingresso/11946478/imprimir.pdf"
+                                                                                                                                target="_blank">
+                                                                                                                                <i
+                                                                                                                                        class="fas fa-print"></i>
+                                                                                                                                Imprimir
+                                                                                                                        </a>
+                                                                                                                </div>
+                                                                                                        </div>
+
+
+
+
+                                                                                                        <hr />
+
+                                                                                                        <div
+                                                                                                                class="row mt-3">
+                                                                                                                <div
+                                                                                                                        class="col">
+                                                                                                                        <p><small>Ingresso:
+                                                                                                                                        <span
+                                                                                                                                                class="clearfix">#11946478
+                                                                                                                                                <span
+                                                                                                                                                        class="mx-3">-</span>
+                                                                                                                                                Pedido:
+                                                                                                                                                #6254648</small>
+                                                                                                                        </p>
+                                                                                                                </div>
+                                                                                                        </div>
+                                                                                                </div>
+
+
+                                                                                                <div
+                                                                                                        class="carousel-item text-center ">
+
+                                                                                                        <!-- Ticket Aprovado -->
+
+
+                                                                                                        <!-- Ticket Sem Transferencia -->
+
+                                                                                                        <div
+                                                                                                                class="mb-3">
+                                                                                                                <img src="/home/generate-qr-code?qr=570b2b2909b60f6dc3983d1fd738f3fc"
+                                                                                                                        class="qrcode-image"
+                                                                                                                        alt="" />
+                                                                                                        </div>
+
+                                                                                                        <h5
+                                                                                                                class="mb-1 text-info font-weight-light">
+                                                                                                                Área VIP
+                                                                                                                Open Bar
+                                                                                                                (LOTE
+                                                                                                                ANTERIOR)
+                                                                                                        </h5>
+
+                                                                                                        <p
+                                                                                                                class="mb-1 text-info">
+                                                                                                                <small>
+                                                                                                                        Promocional
+                                                                                                                        -
+                                                                                                                        R$
+                                                                                                                        110,00
+                                                                                                                </small>
+                                                                                                        </p>
+
+                                                                                                        <p
+                                                                                                                class="mb-3 text-secondary">
+                                                                                                        </p>
+
+                                                                                                        <div
+                                                                                                                class="row">
+                                                                                                                <div
+                                                                                                                        class="col">
+                                                                                                                        <button class="btn btn-primary btn-transfer rounded-pill px-4 btn-sm mb-2"
+                                                                                                                                data-ticket-id="11946479">
+                                                                                                                                <i
+                                                                                                                                        class="fas fa-random"></i>
+                                                                                                                                Transferir
+                                                                                                                        </button>
+                                                                                                                </div>
+
+
+                                                                                                                <div
+                                                                                                                        class="col">
+                                                                                                                        <a class="btn btn-primary rounded-pill px-4 btn-sm mb-2"
+                                                                                                                                href="/pedido/ingresso/11946479/imprimir.pdf"
+                                                                                                                                target="_blank">
+                                                                                                                                <i
+                                                                                                                                        class="fas fa-print"></i>
+                                                                                                                                Imprimir
+                                                                                                                        </a>
+                                                                                                                </div>
+                                                                                                        </div>
+
+
+
+
+                                                                                                        <hr />
+
+                                                                                                        <div
+                                                                                                                class="row mt-3">
+                                                                                                                <div
+                                                                                                                        class="col">
+                                                                                                                        <p><small>Ingresso:
+                                                                                                                                        <span
+                                                                                                                                                class="clearfix">#11946479
+                                                                                                                                                <span
+                                                                                                                                                        class="mx-3">-</span>
+                                                                                                                                                Pedido:
+                                                                                                                                                #6254648</small>
+                                                                                                                        </p>
+                                                                                                                </div>
+                                                                                                        </div>
+                                                                                                </div>
+
+
+                                                                                                <div
+                                                                                                        class="carousel-item text-center ">
+
+                                                                                                        <!-- Ticket Aprovado -->
+
+
+                                                                                                        <!-- Ticket Sem Transferencia -->
+
+                                                                                                        <div
+                                                                                                                class="mb-3">
+                                                                                                                <img src="/home/generate-qr-code?qr=65e1846aca3bbd47c2a774cda21d6aa4"
+                                                                                                                        class="qrcode-image"
+                                                                                                                        alt="" />
+                                                                                                        </div>
+
+                                                                                                        <h5
+                                                                                                                class="mb-1 text-info font-weight-light">
+                                                                                                                Copo
+                                                                                                                Personalizado
+                                                                                                        </h5>
+
+                                                                                                        <p
+                                                                                                                class="mb-1 text-info">
+                                                                                                                <small>
+                                                                                                                        Promocional
+                                                                                                                        -
+                                                                                                                        R$
+                                                                                                                        25,00
+                                                                                                                </small>
+                                                                                                        </p>
+
+                                                                                                        <p
+                                                                                                                class="mb-3 text-secondary">
+                                                                                                        </p>
+
+                                                                                                        <div
+                                                                                                                class="row">
+                                                                                                                <div
+                                                                                                                        class="col">
+                                                                                                                        <button class="btn btn-primary btn-transfer rounded-pill px-4 btn-sm mb-2"
+                                                                                                                                data-ticket-id="12018307">
+                                                                                                                                <i
+                                                                                                                                        class="fas fa-random"></i>
+                                                                                                                                Transferir
+                                                                                                                        </button>
+                                                                                                                </div>
+
+
+                                                                                                                <div
+                                                                                                                        class="col">
+                                                                                                                        <a class="btn btn-primary rounded-pill px-4 btn-sm mb-2"
+                                                                                                                                href="/pedido/ingresso/12018307/imprimir.pdf"
+                                                                                                                                target="_blank">
+                                                                                                                                <i
+                                                                                                                                        class="fas fa-print"></i>
+                                                                                                                                Imprimir
+                                                                                                                        </a>
+                                                                                                                </div>
+                                                                                                        </div>
+
+
+
+
+                                                                                                        <hr />
+
+                                                                                                        <div
+                                                                                                                class="row mt-3">
+                                                                                                                <div
+                                                                                                                        class="col">
+                                                                                                                        <p><small>Ingresso:
+                                                                                                                                        <span
+                                                                                                                                                class="clearfix">#12018307
+                                                                                                                                                <span
+                                                                                                                                                        class="mx-3">-</span>
+                                                                                                                                                Pedido:
+                                                                                                                                                #6293133</small>
+                                                                                                                        </p>
+                                                                                                                </div>
+                                                                                                        </div>
+                                                                                                </div>
+
+
+                                                                                                <div
+                                                                                                        class="carousel-item text-center ">
+
+                                                                                                        <!-- Ticket Aprovado -->
+
+
+                                                                                                        <!-- Ticket Sem Transferencia -->
+
+                                                                                                        <div
+                                                                                                                class="mb-3">
+                                                                                                                <img src="/home/generate-qr-code?qr=62490d8d880f317bd743e154645cc365"
+                                                                                                                        class="qrcode-image"
+                                                                                                                        alt="" />
+                                                                                                        </div>
+
+                                                                                                        <h5
+                                                                                                                class="mb-1 text-info font-weight-light">
+                                                                                                                Copo
+                                                                                                                Personalizado
+                                                                                                        </h5>
+
+                                                                                                        <p
+                                                                                                                class="mb-1 text-info">
+                                                                                                                <small>
+                                                                                                                        Promocional
+                                                                                                                        -
+                                                                                                                        R$
+                                                                                                                        25,00
+                                                                                                                </small>
+                                                                                                        </p>
+
+                                                                                                        <p
+                                                                                                                class="mb-3 text-secondary">
+                                                                                                        </p>
+
+                                                                                                        <div
+                                                                                                                class="row">
+                                                                                                                <div
+                                                                                                                        class="col">
+                                                                                                                        <button class="btn btn-primary btn-transfer rounded-pill px-4 btn-sm mb-2"
+                                                                                                                                data-ticket-id="12018309">
+                                                                                                                                <i
+                                                                                                                                        class="fas fa-random"></i>
+                                                                                                                                Transferir
+                                                                                                                        </button>
+                                                                                                                </div>
+
+
+                                                                                                                <div
+                                                                                                                        class="col">
+                                                                                                                        <a class="btn btn-primary rounded-pill px-4 btn-sm mb-2"
+                                                                                                                                href="/pedido/ingresso/12018309/imprimir.pdf"
+                                                                                                                                target="_blank">
+                                                                                                                                <i
+                                                                                                                                        class="fas fa-print"></i>
+                                                                                                                                Imprimir
+                                                                                                                        </a>
+                                                                                                                </div>
+                                                                                                        </div>
+
+
+
+
+                                                                                                        <hr />
+
+                                                                                                        <div
+                                                                                                                class="row mt-3">
+                                                                                                                <div
+                                                                                                                        class="col">
+                                                                                                                        <p><small>Ingresso:
+                                                                                                                                        <span
+                                                                                                                                                class="clearfix">#12018309
+                                                                                                                                                <span
+                                                                                                                                                        class="mx-3">-</span>
+                                                                                                                                                Pedido:
+                                                                                                                                                #6293135</small>
+                                                                                                                        </p>
+                                                                                                                </div>
+                                                                                                        </div>
+                                                                                                </div>
+
+                                                                                        </div>
+
+                                                                                        <div
+                                                                                                class="col-auto d-flex align-items-center">
+                                                                                                <a class="right carousel-control"
+                                                                                                        href="#event-carousel-18569"
+                                                                                                        role="button"
+                                                                                                        data-slide="next">
+                                                                                                        <span class="fa fa-chevron-right"
+                                                                                                                aria-hidden="true"></span>
+                                                                                                        <span
+                                                                                                                class="sr-only">Next</span>
+                                                                                                </a>
+                                                                                        </div>
+                                                                                </div>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+
+                                                </div>
+                                        </div>
+                                </div>
+
+                                <div class="card bg-light w-100 opacity-3">
+                                        <div class="card-body">
+                                                <div class="row">
+                                                        <div
+                                                                class="col-12 col-md-3 mb-2 mb-md-0 d-flex align-items-center">
+                                                                <img src="https://d106p58duwuiz5.cloudfront.net/event/cover/3e9b0e7542721a383252457c705e69a4.png"
+                                                                        class="img-fluid rounded event-cover" alt="" />
+                                                        </div>
+                                                        <div class="col mb-2 mb-md-0">
+                                                                <h5 class="mt-2">Baile do Saw</h5>
+                                                                <p class="mb-1 text-primary">
+                                                                        <small><span
+                                                                                        class="far fa-calendar mr-1 icon"></span>
+                                                                                Sex 29 de Mar</small>
+                                                                </p>
+                                                                <p class="mb-1 text-primary">
+                                                                        <small><span
+                                                                                        class="far fa-clock mr-1 icon"></span>
+                                                                                22:00</small>
+                                                                </p>
+
+                                                                <p class="mb-1 text-secondary">
+                                                                        <small><span
+                                                                                        class="fas fa-map-marker-alt mr-1 icon"></span>
+                                                                                Quadra Rosas de Ouro</small>
+                                                                </p>
+                                                                <p class="mb-1 text-secondary">
+                                                                        <small>Rua Coronel Euclides Machado, 1066,
+                                                                                02713-000, Jardim das Graças, São Paulo,
+                                                                                SP</small>
+                                                                </p>
+                                                        </div>
+                                                        <div class="col-md-auto col-12 d-flex align-items-center">
+                                                                <button type="button"
+                                                                        class="btn-info btn rounded-pill px-4 w-100"
+                                                                        data-target="#event-ticket-18569"
+                                                                        data-toggle="modal">
+                                                                        4 ingresso(s)
+                                                                </button>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+
+
+                        <div class="row mb-4 mx-auto">
+
+                                <div class="modal ticket-modal" tabindex="-1" role="dialog" id="event-ticket-19202">
+                                        <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                        <div class="modal-header border-0">
+                                                                <h5 class="modal-title">
+                                                                        REVOADA DO TUBARÃO </h5>
+                                                                <button type="button" class="close" data-dismiss="modal"
+                                                                        aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                </button>
+                                                        </div>
+
+                                                        <div class="modal-body">
+
+                                                                <div id="event-carousel-19202" class="carousel slide"
+                                                                        data-ride="carousel" data-interval="false">
+
+                                                                        <div class="carousel-inner" role="listbox">
+                                                                                <div class="row">
+                                                                                        <div
+                                                                                                class="col-auto d-flex align-items-center">
+                                                                                                <a class="left carousel-control"
+                                                                                                        href="#event-carousel-19202"
+                                                                                                        role="button"
+                                                                                                        data-slide="prev">
+                                                                                                        <span class="fa fa-chevron-left"
+                                                                                                                aria-hidden="true"></span>
+                                                                                                        <span
+                                                                                                                class="sr-only">Previous</span>
+                                                                                                </a>
+                                                                                        </div>
+
+                                                                                        <div class="col">
+
+                                                                                                <div
+                                                                                                        class="carousel-item text-center active">
+
+                                                                                                        <!-- Ticket Aprovado -->
+
+                                                                                                        <!-- Ticket -->
+
+                                                                                                        <div
+                                                                                                                class="mb-3">
+                                                                                                                <img src="/home/generate-qr-code?qr=cf41f4dab474baed9b477a1b1ccc0d54"
+                                                                                                                        class="qrcode-image"
+                                                                                                                        alt="" />
+                                                                                                        </div>
+
+                                                                                                        <h5
+                                                                                                                class="mb-0 text-info font-weight-light">
+                                                                                                                ÁREA VIP
+                                                                                                                OPEN BAR
+                                                                                                                + ABADÁ
+                                                                                                        </h5>
+
+                                                                                                        <p
+                                                                                                                class="mb-3 text-info">
+                                                                                                                <small>
+                                                                                                                        1º
+                                                                                                                        Lote
+                                                                                                                        -
+                                                                                                                        R$
+                                                                                                                        175,00
+                                                                                                                </small>
+                                                                                                        </p>
+
+                                                                                                        <div
+                                                                                                                class="row">
+                                                                                                                <div
+                                                                                                                        class="col">
+                                                                                                                        <button class="btn btn-primary btn-give-back rounded-pill px-4 btn-sm mb-2"
+                                                                                                                                data-ticket-id="11654997"
+                                                                                                                                data-user-name="Isabelly Prado">
+                                                                                                                                <i
+                                                                                                                                        class="fas fa-random"></i>
+                                                                                                                                Devolver
+                                                                                                                        </button>
+                                                                                                                </div>
+
+                                                                                                                <div
+                                                                                                                        class="col">
+                                                                                                                        <a class="btn btn-primary rounded-pill px-4 btn-sm mb-2"
+                                                                                                                                href="/pedido/ingresso/11654997/imprimir.pdf"
+                                                                                                                                target="_blank">
+                                                                                                                                <i
+                                                                                                                                        class="fas fa-print"></i>
+                                                                                                                                Imprimir
+                                                                                                                        </a>
+                                                                                                                </div>
+                                                                                                        </div>
+
+
+
+                                                                                                        <hr />
+
+                                                                                                        <div
+                                                                                                                class="row mt-3">
+                                                                                                                <div
+                                                                                                                        class="col">
+                                                                                                                        <p><small>Ingresso:
+                                                                                                                                        <span
+                                                                                                                                                class="clearfix">#11654997
+                                                                                                                                                <span
+                                                                                                                                                        class="mx-3">-</span>
+                                                                                                                                                Pedido:
+                                                                                                                                                #6115835</small>
+                                                                                                                        </p>
+                                                                                                                </div>
+                                                                                                        </div>
+                                                                                                </div>
+
+
+                                                                                                <div
+                                                                                                        class="carousel-item text-center ">
+
+                                                                                                        <!-- Ticket Aprovado -->
+
+                                                                                                        <!-- Ticket -->
+
+                                                                                                        <div
+                                                                                                                class="mb-3">
+                                                                                                                <img src="/home/generate-qr-code?qr=b4664e56763f444e82682a41ff000dfd"
+                                                                                                                        class="qrcode-image"
+                                                                                                                        alt="" />
+                                                                                                        </div>
+
+                                                                                                        <h5
+                                                                                                                class="mb-0 text-info font-weight-light">
+                                                                                                                RETIRADA
+                                                                                                                ABADÁ
+                                                                                                        </h5>
+
+                                                                                                        <p
+                                                                                                                class="mb-3 text-info">
+                                                                                                                <small>
+                                                                                                                        1º
+                                                                                                                        Lote
+                                                                                                                        -
+                                                                                                                        R$
+                                                                                                                        0,00
+                                                                                                                </small>
+                                                                                                        </p>
+
+                                                                                                        <div
+                                                                                                                class="row">
+                                                                                                                <div
+                                                                                                                        class="col">
+                                                                                                                        <button class="btn btn-primary btn-give-back rounded-pill px-4 btn-sm mb-2"
+                                                                                                                                data-ticket-id="11732524"
+                                                                                                                                data-user-name="Isabelly Prado">
+                                                                                                                                <i
+                                                                                                                                        class="fas fa-random"></i>
+                                                                                                                                Devolver
+                                                                                                                        </button>
+                                                                                                                </div>
+
+                                                                                                                <div
+                                                                                                                        class="col">
+                                                                                                                        <a class="btn btn-primary rounded-pill px-4 btn-sm mb-2"
+                                                                                                                                href="/pedido/ingresso/11732524/imprimir.pdf"
+                                                                                                                                target="_blank">
+                                                                                                                                <i
+                                                                                                                                        class="fas fa-print"></i>
+                                                                                                                                Imprimir
+                                                                                                                        </a>
+                                                                                                                </div>
+                                                                                                        </div>
+
+
+
+                                                                                                        <hr />
+
+                                                                                                        <div
+                                                                                                                class="row mt-3">
+                                                                                                                <div
+                                                                                                                        class="col">
+                                                                                                                        <p><small>Ingresso:
+                                                                                                                                        <span
+                                                                                                                                                class="clearfix">#11732524
+                                                                                                                                                <span
+                                                                                                                                                        class="mx-3">-</span>
+                                                                                                                                                Pedido:
+                                                                                                                                                #6153829</small>
+                                                                                                                        </p>
+                                                                                                                </div>
+                                                                                                        </div>
+                                                                                                </div>
+
+
+                                                                                                <div
+                                                                                                        class="carousel-item text-center ">
+
+                                                                                                        <!-- Ticket Aprovado -->
+
+
+                                                                                                        <!-- Ticket Sem Transferencia -->
+
+                                                                                                        <div
+                                                                                                                class="mb-3">
+                                                                                                                <img src="/home/generate-qr-code?qr=45059c577fcd316569fe5d2816af614d"
+                                                                                                                        class="qrcode-image"
+                                                                                                                        alt="" />
+                                                                                                        </div>
+
+                                                                                                        <h5
+                                                                                                                class="mb-1 text-info font-weight-light">
+                                                                                                                RETIRADA
+                                                                                                                ABADÁ
+                                                                                                        </h5>
+
+                                                                                                        <p
+                                                                                                                class="mb-1 text-info">
+                                                                                                                <small>
+                                                                                                                        1º
+                                                                                                                        Lote
+                                                                                                                        -
+                                                                                                                        R$
+                                                                                                                        0,00
+                                                                                                                </small>
+                                                                                                        </p>
+
+                                                                                                        <p
+                                                                                                                class="mb-3 text-secondary">
+                                                                                                        </p>
+
+                                                                                                        <div
+                                                                                                                class="row">
+                                                                                                                <div
+                                                                                                                        class="col">
+                                                                                                                        <button class="btn btn-primary btn-transfer rounded-pill px-4 btn-sm mb-2"
+                                                                                                                                data-ticket-id="11732574">
+                                                                                                                                <i
+                                                                                                                                        class="fas fa-random"></i>
+                                                                                                                                Transferir
+                                                                                                                        </button>
+                                                                                                                </div>
+
+
+                                                                                                                <div
+                                                                                                                        class="col">
+                                                                                                                        <a class="btn btn-primary rounded-pill px-4 btn-sm mb-2"
+                                                                                                                                href="/pedido/ingresso/11732574/imprimir.pdf"
+                                                                                                                                target="_blank">
+                                                                                                                                <i
+                                                                                                                                        class="fas fa-print"></i>
+                                                                                                                                Imprimir
+                                                                                                                        </a>
+                                                                                                                </div>
+                                                                                                        </div>
+
+
+
+
+                                                                                                        <hr />
+
+                                                                                                        <div
+                                                                                                                class="row mt-3">
+                                                                                                                <div
+                                                                                                                        class="col">
+                                                                                                                        <p><small>Ingresso:
+                                                                                                                                        <span
+                                                                                                                                                class="clearfix">#11732574
+                                                                                                                                                <span
+                                                                                                                                                        class="mx-3">-</span>
+                                                                                                                                                Pedido:
+                                                                                                                                                #6153831</small>
+                                                                                                                        </p>
+                                                                                                                </div>
+                                                                                                        </div>
+                                                                                                </div>
+
+                                                                                        </div>
+
+                                                                                        <div
+                                                                                                class="col-auto d-flex align-items-center">
+                                                                                                <a class="right carousel-control"
+                                                                                                        href="#event-carousel-19202"
+                                                                                                        role="button"
+                                                                                                        data-slide="next">
+                                                                                                        <span class="fa fa-chevron-right"
+                                                                                                                aria-hidden="true"></span>
+                                                                                                        <span
+                                                                                                                class="sr-only">Next</span>
+                                                                                                </a>
+                                                                                        </div>
+                                                                                </div>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+
+                                                </div>
+                                        </div>
+                                </div>
+
+                                <div class="card bg-light w-100 opacity-3">
+                                        <div class="card-body">
+                                                <div class="row">
+                                                        <div
+                                                                class="col-12 col-md-3 mb-2 mb-md-0 d-flex align-items-center">
+                                                                <img src="https://d106p58duwuiz5.cloudfront.net/event/cover/61fc747714774200aeee5caed8a49c06.png"
+                                                                        class="img-fluid rounded event-cover" alt="" />
+                                                        </div>
+                                                        <div class="col mb-2 mb-md-0">
+                                                                <h5 class="mt-2">REVOADA DO TUBARÃO</h5>
+                                                                <p class="mb-1 text-primary">
+                                                                        <small><span
+                                                                                        class="far fa-calendar mr-1 icon"></span>
+                                                                                Sex 15 de Mar</small>
+                                                                </p>
+                                                                <p class="mb-1 text-primary">
+                                                                        <small><span
+                                                                                        class="far fa-clock mr-1 icon"></span>
+                                                                                21:59</small>
+                                                                </p>
+
+                                                                <p class="mb-1 text-secondary">
+                                                                        <small><span
+                                                                                        class="fas fa-map-marker-alt mr-1 icon"></span>
+                                                                                Centro de Eventos - Arena
+                                                                                Pinheiros</small>
+                                                                </p>
+                                                                <p class="mb-1 text-secondary">
+                                                                        <small>Av. Eng. Billings, 2300, 02675-031, -,
+                                                                                São Paulo, SP</small>
+                                                                </p>
+                                                        </div>
+                                                        <div class="col-md-auto col-12 d-flex align-items-center">
+                                                                <button type="button"
+                                                                        class="btn-info btn rounded-pill px-4 w-100"
+                                                                        data-target="#event-ticket-19202"
+                                                                        data-toggle="modal">
+                                                                        3 ingresso(s)
+                                                                </button>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+
