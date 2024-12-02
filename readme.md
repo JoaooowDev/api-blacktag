@@ -3,9 +3,10 @@
 Uma api para comunicação entre a blacktag e sites tercerizados<br/>
 
 ## Principais funcionalidades
-- Verificar quantidade de ingressos em eventos 🔜
-- Envio de ingressos 🔜
-- Compra de ingressos 🔜
+- Verificar quantidade de ingressos em eventos ✅
+- Envio de ingressos ✅
+- Verificação de usuario ✅
+- Compra de ingressos ❌
 <!-- ✅ ❌ 🔜 -->
 
 ## Informe-se
